@@ -1,0 +1,1690 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f3ea" />
+    <meta name="description"
+        content="Vedant Mandhare — Full-stack developer and IT undergraduate at K. J. Somaiya Institute of Technology." />
+    <title>Vedant Mandhare Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <canvas id="stars" aria-hidden="true"></canvas>
+    <div id="ring" aria-hidden="true"></div>
+    <div class="progress" id="progress"></div>
+    <canvas id="matrix"></canvas>
+    <div class="cursor-dot" id="cursor"></div>
+    <header class="site-head">
+        <div class="wrap">
+            <nav>
+                <a class="brand" href="#top">VEDANT<span>.exe</span></a>
+                <button class="navbtn" id="menuBtn" aria-label="Toggle navigation">
+                    MENU ☰
+                </button>
+                <div class="navlinks" id="navlinks">
+                    <a href="#about">/ABOUT</a><a href="#skills">/SKILLS</a><a href="#experience">/LOGS</a><a
+                        href="#projects">/WORK</a><a href="#contact" class="hire">HIRE ME ↗</a><span class="seasons"
+                        role="group" aria-label="Season theme"><button class="sw" data-s="winter"
+                            style="background: #bfe3ff" aria-label="Winter"></button><button class="sw" data-s="spring"
+                            style="background: #c9f27a" aria-label="Spring"></button><button class="sw" data-s="summer"
+                            style="background: #ff8a5c" aria-label="Summer"></button><button class="sw" data-s="autumn"
+                            style="background: #ffb347" aria-label="Autumn"></button></span><button class="navbtn"
+                        id="themeBtn">◐ THEME</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id="top">
+        <div class="wrap">
+            <section class="hero">
+                <div>
+                    <div class="status">
+                        <i class="dot"></i> SYSTEM STATUS: ONLINE
+                        <span class="mono">· MUMBAI, IN</span>
+                    </div>
+                    <h1>FULL STACK<br /><span class="outline">DEVELOPER</span></h1>
+                    <p class="hero-copy">
+                        I build <strong>scalable backends</strong>, real-time applications
+                        and useful digital products. IT undergraduate at K. J. Somaiya
+                        Institute of Technology, focused on backend engineering and
+                        full-stack development.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn primary" href="#projects">▣ VIEW MY WORK</a><a class="btn dark"
+                            href="mailto:vedantmandhare0509@gmail.com">✉ CONTACT ME</a><a class="btn"
+                            href="./assets/resume.pdf" target="_blank" rel="noopener">
+                            ↓ VIEW MY RESUME
+                        </a>
+                    </div>
+                    <div class="hero-metrics">
+                        <div class="metric">
+                            <b>9.05</b>
+                            CGPA
+                        </div>
+
+                        <div class="metric">
+                            <b>200+</b>
+                            LeetCode problems solved
+                        </div>
+
+                        <div class="metric intern-metric">
+                            <img src="https://bluestock.in/static/assets/logo/logo-android.webp"
+                                alt="Bluestock company logo" />
+                            <div>
+                                <b>DATA ANALYST</b>
+                                <span>Intern @ Bluestock</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-art">
+                    <div class="shape sq"></div>
+                    <div class="shape circ"></div>
+                    <div class="shape star"></div>
+                    <div class="terminal">
+                        <div class="terminal-top">
+                            <span>● vedant @ portfolio:~</span><span>TERMINAL v1.0</span>
+                        </div>
+                        <pre id="termOutput">
+Boot sequence complete.
+Welcome to VEDANT.exe
+
+Type "help" to explore.
+$ whoami
+Vedant Mandhare
+Full-stack developer · IT undergraduate</pre>
+                        <div class="terminal-shortcuts">
+                            <button data-command="about">about</button><button
+                                data-command="projects">projects</button><button
+                                data-command="skills">skills</button><button
+                                data-command="experience">experience</button><button
+                                data-command="contact">contact</button>
+                        </div>
+                        <form class="terminal-input" id="terminalForm">
+                            <span>$</span><input id="terminalInput" autocomplete="off"
+                                placeholder="type help and press enter" aria-label="Terminal command" />
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="ticker">
+            <div class="ticker-track">
+                JAVA | JAVASCRIPT | NODE.JS | EXPRESS | REACT | MONGODB | MYSQL |
+                REDIS | DOCKER | REST APIS | SOCKET.IO | JAVA | JAVASCRIPT | NODE.JS |
+                EXPRESS | REACT | MONGODB | MYSQL | REDIS | DOCKER | REST APIS |
+                SOCKET.IO |
+            </div>
+        </div>
+        <div class="wrap">
+            <section id="about" class="reveal">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">01 / WHO IS BEHIND THE CODE?</div>
+                        <h2>ABOUT ME<span style="color: var(--blue)">.</span></h2>
+                    </div>
+                    <span class="section-index">PROFILE_001</span>
+                </div>
+                <div class="about-grid">
+                    <article class="card">
+                        <p class="eyebrow">THE SHORT VERSION</p>
+                        <p style="font-size: 19px">
+                            I'm Vedant Mandhare, an Information Technology undergraduate at
+                            K. J. Somaiya Institute of Technology. I enjoy designing backend
+                            systems, building full-stack products and solving problems with
+                            clean, reliable code.
+                        </p>
+                        <p>
+                            I have worked with REST APIs, authentication and authorization,
+                            databases, real-time market data, scheduled data pipelines and
+                            third-party integrations. I'm currently looking for software
+                            development and backend engineering internship opportunities.
+                        </p>
+                        <p class="mono" style="font-size: 12px; color: var(--muted)">
+                            CURRENT FOCUS → BACKEND ENGINEERING / DSA / SYSTEM DESIGN
+                        </p>
+                    </article>
+                    <article class="card about-note">
+                        <div class="eyebrow" style="color: #222">DEVELOPER PRINCIPLE</div>
+                        <p class="big-note">
+                            Build things that work reliably — then make them delightful to
+                            use.
+                        </p>
+                        <div class="facts">
+                            <div class="fact"><b>9.05</b><small>SEM 4 CGPA</small></div>
+                            <div class="fact"><b>97.47</b><small>MHT-CET %ILE</small></div>
+                            <div class="fact">
+                                <b>2+</b><small>FEATURED PROJECTS</small>
+                            </div>
+                            <div class="fact"><b>2024–28</b><small>B.TECH IT</small></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="skills" class="reveal">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">02 / TOOLS OF THE TRADE</div>
+                        <h2>TECH STACK<span style="color: var(--pink)">.</span></h2>
+                    </div>
+                    <span class="section-index">SKILLS_002</span>
+                </div>
+                <div class="skill-grid">
+                    <div class="card skill-card">
+                        <h3>01. Languages</h3>
+                        <div class="tiles">
+                            <span class="tile"><span class="tile">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                        alt="Java" class="java-logo" /> </span><b>Java</b></span><span class="tile"><svg
+                                    viewBox="0 0 24 24" width="34" height="34" aria-hidden="true">
+                                    <path fill="#F7DF1E"
+                                        d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+                                </svg><b>JavaScript</b></span><span class="tile"><span
+                                    class="mono-ic">SQL</span><b>SQL</b></span>
+                        </div>
+                    </div>
+                    <div class="card skill-card">
+                        <h3>02. Frameworks</h3>
+                        <div class="tiles">
+                            <span class="tile"><svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true">
+                                    <path fill="#61DAFB"
+                                        d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z" />
+                                </svg><b>React.js</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="#5FA04E"
+                                        d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z" />
+                                </svg><b>Node.js</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="currentColor"
+                                        d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" />
+                                </svg><b>Express.js</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="#7952B3"
+                                        d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z" />
+                                </svg><b>Bootstrap</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="#06B6D4"
+                                        d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+                                </svg><b>Tailwind CSS</b></span>
+                        </div>
+                    </div>
+                    <div class="card skill-card">
+                        <h3>03. Databases</h3>
+                        <div class="tiles">
+                            <span class="tile"><svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true">
+                                    <path fill="#47A248"
+                                        d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z" />
+                                </svg><b>MongoDB</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="#4479A1"
+                                        d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 00.3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 00-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 00-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 00-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 00-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 01-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 01-.35-.4 8.76 8.76 0 01-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 01-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 012.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z" />
+                                </svg><b>MySQL</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="currentColor"
+                                        d="M21.678.521c-1.032-.92-2.28-.55-3.513.544a8.71 8.71 0 0 0-.547.535c-2.109 2.237-4.066 6.38-4.674 9.544.237.48.422 1.093.544 1.561a13.044 13.044 0 0 1 .164.703s-.019-.071-.096-.296l-.05-.146a1.689 1.689 0 0 0-.033-.08c-.138-.32-.518-.995-.686-1.289-.143.423-.27.818-.376 1.176.484.884.778 2.4.778 2.4s-.025-.099-.147-.442c-.107-.303-.644-1.244-.772-1.464-.217.804-.304 1.346-.226 1.478.152.256.296.698.422 1.186.286 1.1.485 2.44.485 2.44l.017.224a22.41 22.41 0 0 0 .056 2.748c.095 1.146.273 2.13.5 2.657l.155-.084c-.334-1.038-.47-2.399-.41-3.967.09-2.398.642-5.29 1.661-8.304 1.723-4.55 4.113-8.201 6.3-9.945-1.993 1.8-4.692 7.63-5.5 9.788-.904 2.416-1.545 4.684-1.931 6.857.666-2.037 2.821-2.912 2.821-2.912s1.057-1.304 2.292-3.166c-.74.169-1.955.458-2.362.629-.6.251-.762.337-.762.337s1.945-1.184 3.613-1.72C21.695 7.9 24.195 2.767 21.678.521m-18.573.543A1.842 1.842 0 0 0 1.27 2.9v16.608a1.84 1.84 0 0 0 1.835 1.834h9.418a22.953 22.953 0 0 1-.052-2.707c-.006-.062-.011-.141-.016-.2a27.01 27.01 0 0 0-.473-2.378c-.121-.47-.275-.898-.369-1.057-.116-.197-.098-.31-.097-.432 0-.12.015-.245.037-.386a9.98 9.98 0 0 1 .234-1.045l.217-.028c-.017-.035-.014-.065-.031-.097l-.041-.381a32.8 32.8 0 0 1 .382-1.194l.2-.019c-.008-.016-.01-.038-.018-.053l-.043-.316c.63-3.28 2.587-7.443 4.8-9.791.066-.069.133-.128.198-.194Z" />
+                                </svg><b>SQLite</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="#FF4438"
+                                        d="M22.71 13.145c-1.66 2.092-3.452 4.483-7.038 4.483-3.203 0-4.397-2.825-4.48-5.12.701 1.484 2.073 2.685 4.214 2.63 4.117-.133 6.94-3.852 6.94-7.239 0-4.05-3.022-6.972-8.268-6.972-3.752 0-8.4 1.428-11.455 3.685C2.59 6.937 3.885 9.958 4.35 9.626c2.648-1.904 4.748-3.13 6.784-3.744C8.12 9.244.886 17.05 0 18.425c.1 1.261 1.66 4.648 2.424 4.648.232 0 .431-.133.664-.365a100.49 100.49 0 0 0 5.54-6.765c.222 3.104 1.748 6.898 6.014 6.898 3.819 0 7.604-2.756 9.33-8.965.2-.764-.73-1.361-1.261-.73zm-4.349-5.013c0 1.959-1.926 2.922-3.685 2.922-.941 0-1.664-.247-2.235-.568 1.051-1.592 2.092-3.225 3.21-4.973 1.972.334 2.71 1.43 2.71 2.619z" />
+                                </svg><b>Redis</b></span>
+                        </div>
+                    </div>
+                    <div class="card skill-card">
+                        <h3>04. Engineering</h3>
+                        <div class="tiles">
+                            <span class="tile"><span class="mono-ic">RES</span><b>REST APIs</b></span><span
+                                class="tile"><svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true">
+                                    <path fill="currentColor"
+                                        d="M10.2 0v6.456L12 8.928l1.8-2.472V0zm3.6 6.456v3.072l2.904-.96L20.52 3.36l-2.928-2.136zm2.904 2.112l-1.8 2.496 2.928.936 6.144-1.992-1.128-3.432zM17.832 12l-2.928.936 1.8 2.496 6.144 1.992 1.128-3.432zm-1.128 3.432l-2.904-.96v3.072l3.792 5.232 2.928-2.136zM13.8 17.544L12 15.072l-1.8 2.472V24h3.6zm-3.6 0v-3.072l-2.904.96L3.48 20.64l2.928 2.136zm-2.904-2.112l1.8-2.496L6.168 12 .024 13.992l1.128 3.432zM6.168 12l2.928-.936-1.8-2.496-6.144-1.992-1.128 3.432zm1.128-3.432l2.904.96V6.456L6.408 1.224 3.48 3.36Z" />
+                                </svg><b>JWT</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="currentColor"
+                                        d="M11.9362.0137a12.1694 12.1694 0 00-2.9748.378C4.2816 1.5547.5678 5.7944.0918 10.6012c-.59 4.5488 1.7079 9.2856 5.6437 11.6345 3.8608 2.4179 9.0926 2.3199 12.8734-.223 3.3969-2.206 5.5118-6.2277 5.3858-10.2845-.058-4.0159-2.31-7.9167-5.7588-9.9796C16.354.5876 14.1431.0047 11.9362.0137zm-.063 1.696c4.9448-.007 9.7886 3.8137 10.2815 8.9245.945 5.6597-3.7528 11.4125-9.4875 11.5795-5.4538.544-10.7245-4.0798-10.8795-9.5566-.407-4.4338 2.5159-8.8346 6.6977-10.2995a9.1126 9.1126 0 013.3878-.647zm5.0908 3.2248c-2.6869 2.0849-5.2598 4.3078-7.8886 6.4567 1.2029.017 2.4118.016 3.6208.01 1.41-2.165 2.8589-4.3008 4.2678-6.4667zm-5.6647 7.6536c-1.41 2.166-2.86 4.3088-4.2699 6.4737 2.693-2.0799 5.2548-4.3198 7.9017-6.4557a255.4132 255.4132 0 00-3.6318-.018z" />
+                                </svg><b>Socket.IO</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="#2496ED"
+                                        d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z" />
+                                </svg><b>Docker</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="#F05032"
+                                        d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187" />
+                                </svg><b>Git</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="#FF6C37"
+                                        d="M13.527.099C6.955-.744.942 3.9.099 10.473c-.843 6.572 3.8 12.584 10.373 13.428 6.573.843 12.587-3.801 13.428-10.374C24.744 6.955 20.101.943 13.527.099zm2.471 7.485a.855.855 0 0 0-.593.25l-4.453 4.453-.307-.307-.643-.643c4.389-4.376 5.18-4.418 5.996-3.753zm-4.863 4.861l4.44-4.44a.62.62 0 1 1 .847.903l-4.699 4.125-.588-.588zm.33.694l-1.1.238a.06.06 0 0 1-.067-.032.06.06 0 0 1 .01-.073l.645-.645.512.512zm-2.803-.459l1.172-1.172.879.878-1.979.426a.074.074 0 0 1-.085-.039.072.072 0 0 1 .013-.093zm-3.646 6.058a.076.076 0 0 1-.069-.083.077.077 0 0 1 .022-.046h.002l.946-.946 1.222 1.222-2.123-.147zm2.425-1.256a.228.228 0 0 0-.117.256l.203.865a.125.125 0 0 1-.211.117h-.003l-.934-.934-.294-.295 3.762-3.758 1.82-.393.874.874c-1.255 1.102-2.971 2.201-5.1 3.268zm5.279-3.428h-.002l-.839-.839 4.699-4.125a.952.952 0 0 0 .119-.127c-.148 1.345-2.029 3.245-3.977 5.091zm3.657-6.46l-.003-.002a1.822 1.822 0 0 1 2.459-2.684l-1.61 1.613a.119.119 0 0 0 0 .169l1.247 1.247a1.817 1.817 0 0 1-2.093-.343zm2.578 0a1.714 1.714 0 0 1-.271.218h-.001l-1.207-1.207 1.533-1.533c.661.72.637 1.832-.054 2.522zM18.855 6.05a.143.143 0 0 0-.053.157.416.416 0 0 1-.053.45.14.14 0 0 0 .023.197.141.141 0 0 0 .084.03.14.14 0 0 0 .106-.05.691.691 0 0 0 .087-.751.138.138 0 0 0-.194-.033z" />
+                                </svg><b>Postman</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="#E34F26"
+                                        d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+                                </svg><b>HTML5</b></span><span class="tile"><svg viewBox="0 0 24 24" width="34"
+                                    height="34" aria-hidden="true">
+                                    <path fill="#1572B6"
+                                        d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" />
+                                </svg><b>CSS3</b></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="experience" class="reveal">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">03 / FIELD EXPERIENCE</div>
+                        <h2>EXPERIENCE LOGS<span style="color: var(--green)">.</span></h2>
+                    </div>
+                    <span class="section-index">LOGS_003</span>
+                </div>
+                <div class="timeline">
+                    <article class="card timeline-item">
+                        <div class="timeline-date">OCT 2026 — PRESENT<br />REMOTE</div>
+                        <div>
+                            <h3>Data Analyst Intern</h3>
+                            <p class="meta">Bluestock Fintech · Financial Data Analytics</p>
+                            <ul>
+                                <li>
+                                    Built a Python/pandas ETL pipeline to clean and validate
+                                    <strong>64,320 NAV records</strong> and
+                                    <strong>32,778 investor transactions</strong> across 40
+                                    schemes, 10 fund houses and 5,000 investors.
+                                </li>
+                                <li>
+                                    Validated 40/40 scheme codes, checked duplicate NAV records
+                                    and loaded the data into a SQLite fact-and-dimension schema.
+                                </li>
+                                <li>
+                                    Computed CAGR, Sharpe, Sortino, maximum drawdown, Nifty
+                                    50/100 alpha and beta, and 95% VaR/CVaR for 40 funds.
+                                </li>
+                                <li>
+                                    Built a four-tab analytics dashboard with category and
+                                    fund-house filters.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="projects" class="reveal">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">04 / SELECTED BUILDS</div>
+                        <h2>FEATURED WORK<span style="color: var(--yellow)">.</span></h2>
+                    </div>
+                    <span class="section-index">WORK_004</span>
+                </div>
+                <div class="project-tools">
+                    <button class="filter active" data-filter="all">ALL PROJECTS</button><button class="filter"
+                        data-filter="backend">BACKEND</button><button class="filter" data-filter="fullstack">FULL
+                        STACK</button><button class="filter" data-filter="data">DATA</button>
+                </div>
+                <div class="project-grid">
+                    <article class="card project" data-category="backend fullstack">
+                        <div class="project-banner">
+                            <img class="shot" src="images/zerodha-dashboard.png"
+                                alt="Real-time Stock and Mutual Fund Analytics dashboard" />
+                        </div>
+                        <div class="project-body">
+                            <div class="eyebrow">01 / FINTECH PLATFORM</div>
+                            <h3>Real-time Stock & Mutual Fund Analytics</h3>
+                            <p>
+                                A full-stack platform for market data, portfolio workflows and
+                                mutual fund analytics.
+                            </p>
+                            <div class="pills">
+                                <span class="pill">Node.js</span><span class="pill">Express</span><span
+                                    class="pill">React</span><span class="pill">MongoDB</span><span
+                                    class="pill">Redis</span><span class="pill">Upstox API</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    Eight Express services behind a central API gateway;
+                                    deployed on Render.
+                                </li>
+                                <li>
+                                    Live market prices streamed from Upstox APIs/feed and cached
+                                    with Redis.
+                                </li>
+                                <li>
+                                    JWT authentication, role-based access, validation and rate
+                                    limiting.
+                                </li>
+                                <li>
+                                    Idempotent simulated orders with MongoDB transactions;
+                                    scheduled NAV sync with missed-run recovery.
+                                </li>
+                                <li><strong>49 automated tests passing.</strong></li>
+                            </ul>
+                            <button class="detail-btn" data-modal="stock">
+                                OPEN CASE STUDY ↗
+                            </button>
+                            <div class="project-links">
+                                <a class="mini-link" data-proj="stock" data-link="live"
+                                    href="https://zerodha-a-online-trading-platforms.onrender.com/home">LIVE DEMO</a><a
+                                    class="mini-link" data-proj="stock" data-link="github"
+                                    href="https://github.com/vedant-0509/Zerodha-A-Online-brokerage-platform">GITHUB</a><a
+                                    class="mini-link" data-proj="stock" data-link="docker"
+                                    href="https://hub.docker.com/repository/docker/vedant0509/zerodha-myversion/general">DOCKER</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project" data-category="fullstack">
+                        <div class="project-banner">
+                            <img class="shot" src="images/wanderlust-signup.png"
+                                alt="Wanderlust travel listing application" />
+                        </div>
+                        <div class="project-body">
+                            <div class="eyebrow">02 / TRAVEL WEB APP</div>
+                            <h3>Wanderlust — Travel Listing App</h3>
+                            <p>
+                                A travel listing application with user-generated listings,
+                                reviews, maps and secure authentication.
+                            </p>
+                            <div class="pills">
+                                <span class="pill">Node.js</span><span class="pill">Express</span><span
+                                    class="pill">MongoDB</span><span class="pill">EJS</span><span
+                                    class="pill">Cloudinary</span><span class="pill">MapTiler</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    Listing CRUD, Cloudinary image uploads, reviews and Joi
+                                    server-side validation.
+                                </li>
+                                <li>
+                                    Local authentication and Google OAuth 2.0; owner-only
+                                    edit/delete permissions.
+                                </li>
+                                <li>
+                                    MapTiler geocoding, GeoJSON coordinates and interactive
+                                    maps.
+                                </li>
+                                <li>Search and filters across 10 listing categories.</li>
+                            </ul>
+                            <button class="detail-btn" data-modal="wanderlust">
+                                OPEN CASE STUDY ↗
+                            </button>
+                            <div class="project-links">
+                                <a class="mini-link" data-proj="wanderlust" data-link="live"
+                                    href="https://wanderlust-a-travelling-guide.onrender.com/alllist">LIVE DEMO</a><a
+                                    class="mini-link" data-proj="wanderlust" data-link="github"
+                                    href="https://github.com/vedant-0509/WanderLust">GITHUB</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project" data-category="data">
+                        <div class="project-banner" data-img="funds">
+                            <div class="fake-window">
+                                <strong>FUND PERFORMANCE</strong>
+                                <div style="
+                      display: flex;
+                      align-items: end;
+                      gap: 8px;
+                      height: 70px;
+                      border-bottom: 2px solid #111;
+                      padding: 0 10px;
+                    ">
+                                    <i style="height: 35%; width: 18%; background: #4b8df8"></i><i
+                                        style="height: 65%; width: 18%; background: #8be0a4"></i><i
+                                        style="height: 88%; width: 18%; background: #ff8db6"></i><i
+                                        style="height: 55%; width: 18%; background: #fbff45"></i>
+                                </div>
+                                <div class="fake-lines"></div>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="eyebrow">03 / INTERNSHIP ANALYTICS</div>
+                            <h3>Mutual Fund Analytics Pipeline</h3>
+                            <p>
+                                Financial data preparation and fund-performance analysis
+                                completed during the Bluestock internship.
+                            </p>
+                            <div class="pills">
+                                <span class="pill">Python</span><span class="pill">Pandas</span><span
+                                    class="pill">SQLite</span><span class="pill">ETL</span><span class="pill">Risk
+                                    Metrics</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    Data validation across NAV and investor transaction
+                                    datasets.
+                                </li>
+                                <li>
+                                    Fund-level performance and risk metrics for 40 schemes.
+                                </li>
+                                <li>
+                                    Dashboard with four tabs and category/fund-house filters.
+                                </li>
+                            </ul>
+                            <button class="detail-btn" data-modal="funds">
+                                OPEN CASE STUDY ↗
+                            </button>
+                            <div class="project-links">
+                                <!-- <a class="mini-link" data-proj="funds" data-link="live" href="#">LIVE DEMO</a>-->
+                                <a class="mini-link" data-proj="funds" data-link="github"
+                                    href="https://github.com/vedant-0509/Bluestock-Mutual-Fund-Analytics">GITHUB</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card project" data-category="fullstack backend">
+                        <div class="project-banner" data-img="engineering">
+                            <div class="fake-window">
+                                <strong>ENGINEERING NOTEBOOK</strong>
+                                <div class="fake-lines"></div>
+                                <div class="fake-lines short"></div>
+                                <div class="fake-lines"></div>
+                                <div class="fake-lines short"></div>
+                                <span class="pill">BUILD / TEST / SHIP</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="eyebrow">04 / ENGINEERING PRACTICE</div>
+                            <h3>Backend Systems & API Engineering</h3>
+                            <p>
+                                A closer look at the engineering practices used across the
+                                portfolio projects.
+                            </p>
+                            <div class="pills">
+                                <span class="pill">REST</span><span class="pill">JWT</span><span
+                                    class="pill">RBAC</span><span class="pill">Rate Limiting</span><span
+                                    class="pill">Docker</span>
+                            </div>
+                            <ul>
+                                <li>Centralized API routing and service separation.</li>
+                                <li>Authentication, authorization and input validation.</li>
+                                <li>Automated tests and database transaction safety.</li>
+                            </ul>
+                            <button class="detail-btn" data-modal="engineering">
+                                OPEN ENGINEERING NOTES ↗
+                            </button>
+                            <div class="project-links">
+                                <!-- <a class="mini-link" data-proj="engineering" data-link="live" href="#">LIVE DEMO</a><a
+                                    class="mini-link" data-proj="engineering" data-link="github" href="#">GITHUB</a> -->
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- <section id="architecture" class="reveal">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">05 / HOW THE SYSTEM FITS TOGETHER</div>
+                        <h2>ARCHITECTURE<span style="color: var(--blue)">.</span></h2>
+                    </div>
+                    <span class="section-index">SYSTEM_005</span>
+                </div>
+                <div class="arch-grid">
+                    <div class="arch">
+                        <h3>STOCK PLATFORM / REQUEST FLOW</h3>
+                        <div class="flow">
+                            <span class="node">React UI</span><span class="arrow">→</span><span class="node">Central
+                                API</span><span class="arrow">→</span><span class="node">8 Services</span>
+                        </div>
+                        <div class="flow" style="margin-top: 12px">
+                            <span class="node">MongoDB</span><span class="node">Redis Cache</span><span
+                                class="node">Upstox Feed</span>
+                        </div>
+                        <p>
+                            Conceptual view based on the project description; exact
+                            deployment topology can be expanded with your repository
+                            architecture.
+                        </p>
+                    </div>
+                    <div class="arch">
+                        <h3>FUND ANALYTICS / DATA FLOW</h3>
+                        <div class="flow">
+                            <span class="node">NAV + Transactions</span><span class="arrow">→</span><span
+                                class="node">Pandas ETL</span>
+                        </div>
+                        <div class="flow" style="margin-top: 12px">
+                            <span class="node">Validation</span><span class="arrow">→</span><span class="node">SQLite
+                                Schema</span><span class="arrow">→</span><span class="node">Metrics + Dashboard</span>
+                        </div>
+                        <p>
+                            Data workflow summarised from the Bluestock internship work
+                            described in your resume.
+                        </p>
+                    </div>
+                </div>
+            </section> -->
+            <!-- <section id="highlights" class="reveal">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">06 / PROOF OF WORK</div>
+                        <h2>IMPACT NUMBERS<span style="color: var(--green)">.</span></h2>
+                    </div>
+                    <span class="section-index">METRICS_006</span>
+                </div>
+                <div class="stats-grid">
+                    <div class="achievement">
+                        <b>64,320</b><span>NAV RECORDS CLEANED / VALIDATED</span>
+                    </div>
+                    <div class="achievement">
+                        <b>32,778</b><span>INVESTOR TRANSACTIONS PROCESSED</span>
+                    </div>
+                    <div class="achievement">
+                        <b>40</b><span>MUTUAL FUND SCHEMES ANALYSED</span>
+                    </div>
+                    <div class="achievement">
+                        <b>5,000</b><span>INVESTORS IN DATASET</span>
+                    </div>
+                    <div class="achievement">
+                        <b>08</b><span>EXPRESS SERVICES BEHIND GATEWAY</span>
+                    </div>
+                    <div class="achievement">
+                        <b>49</b><span>AUTOMATED TESTS PASSING</span>
+                    </div>
+                </div>
+            </section> -->
+            <section id="education" class="reveal">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">07 / THE FOUNDATION</div>
+                        <h2>
+                            EDUCATION + CERTIFICATIONS<span style="color: var(--pink)">.</span>
+                        </h2>
+                    </div>
+                    <span class="section-index">LEARNING_007</span>
+                </div>
+                <div class="education-grid">
+                    <article class="card">
+                        <div class="eyebrow">EDUCATION</div>
+                        <div class="edu-item with-logo">
+                            <span class="logo kj-logo">
+                                <img src="images/kjsit-logo.png" alt="K. J. Somaiya Institute of Technology Logo" />
+                            </span>
+                            <div>
+                                <h3>B.Tech — Information Technology</h3>
+                                <p>K. J. Somaiya Institute of Technology | 2024–2028</p>
+                                <strong>CGPA: 9.05 (Semester 4)</strong>
+                            </div>
+                        </div>
+                        <div class="edu-item with-logo">
+                            <span class="logo kj-logo">
+                                <img src="images/dgruparel.png" alt="D.G Ruparel Clg" />
+                            </span>
+                            <div>
+                                <h3>Class XII — PCMB</h3>
+                                <p>D. G. Ruparel College | 2022–2024</p>
+                                <strong>85.86%</strong>
+                            </div>
+                        </div>
+                        <div class="edu-item with-logo">
+                            <span class="logo" style="background: #2e7d32; color: #fff">SSC</span>
+                            <div>
+                                <h3>Class X</h3>
+                                <p>ST. Joseph's High School | 2022</p>
+                                <strong>86%</strong>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="eyebrow">CERTIFICATIONS</div>
+
+                        <div class="edu-item with-logo">
+                            <span class="logo" style="background: #fff; color: #181717">
+                                <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true">
+                                    <path fill="currentColor"
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </span>
+
+                            <div style="
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10.8rem;
+                    align-items: center;
+                  ">
+                                <div class="">
+                                    <h3>GitHub Foundations</h3>
+                                    <p>GitHub | June 2026</p>
+                                </div>
+
+                                <div class="">
+                                    <a class="mini-link"
+                                        href="https://drive.google.com/drive/u/1/folders/1QhehgV-9GMhejdD6evU_FKGsmu9_PYnM">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-item with-logo">
+                            <span class="logo" style="background: #1f70c1; color: #fff">IBM</span>
+
+                            <div style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                  ">
+                                <div class="">
+                                    <h3>IBM Web Development Fundamentals</h3>
+                                    <p>Coursera | May 2026</p>
+                                </div>
+
+                                <div style="margin-left: 1rem">
+                                    <a class="mini-link"
+                                        href="https://drive.google.com/file/d/1YxYF70sZi5PB2UxF3OsVlXu4M7kHN2ju/view">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-item with-logo">
+                            <span class="logo" style="background: #fff; color: #fff">
+                                <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true">
+                                    <path fill="#7399C6"
+                                        d="M1.963 9.264h1.452v2.378c-.484.098-.855.148-1.262.148C.561 11.79 0 10.878 0 9.377c0-1.614.778-2.526 2.329-2.526.196 0 .567.014 1.03.084v1.522h-.336l-.19-.582c-.183-.553-.4-.827-.744-.827-.596 0-.912.806-.912 2.315 0 1.515.126 2.23.904 2.23.106 0 .231-.014.351-.048V9.776l-.469-.323v-.189Zm1.424 6.382c0 .954-.651 1.501-1.802 1.501-.315 0-.778-.048-1.213-.119v-1.865h.337l.14.441c.315 1.017.54 1.353.94 1.353.421 0 .722-.371.722-.862 0-.399-.189-.68-.595-.898l-.702-.378c-.541-.287-.835-.736-.835-1.283 0-.828.68-1.326 1.796-1.326.252 0 .547.022 1.016.085v1.521h-.337l-.188-.581c-.19-.618-.393-.842-.764-.842-.415 0-.66.266-.66.652 0 .343.19.589.561.799l.708.399c.596.337.876.786.876 1.403Zm3.101 1.102.14.211v.106H5.556l-.05-.407c-.112.308-.407.491-.786.491-.561 0-.912-.351-.912-.926 0-.561.315-.933 1.283-1.311l.414-.161v-.525c0-.463-.085-.652-.344-.652-.21 0-.329.112-.533.623l-.231.573h-.315v-1.144c.414-.126.828-.21 1.185-.21.792 0 1.221.378 1.221 1.066v2.266Zm.405-6.824c0 1.192-.637 1.866-1.459 1.866-.82 0-1.457-.674-1.457-1.866 0-1.193.637-1.866 1.459-1.866.82 0 1.457.673 1.457 1.866Zm-1.387 6.235v-1.213l-.133.056c-.414.169-.569.547-.569 1.101 0 .414.099.652.329.652.231 0 .373-.225.373-.596Zm.357-6.235c0-1.347-.112-1.704-.427-1.704s-.428.357-.428 1.704c0 1.346.113 1.704.428 1.704s.427-.358.427-1.704Zm3.521 6.269.126.064c-.224.646-.511.89-1.066.89-.904 0-1.409-.679-1.409-1.865 0-1.185.589-1.866 1.55-1.866.258 0 .603.042.897.16v1.193h-.329l-.132-.449c-.176-.596-.273-.75-.449-.75-.281 0-.505.365-.505 1.754 0 1.114.168 1.521.595 1.521.287.001.532-.181.722-.652Zm-.779-4.488H7.342v-.104l.141-.211V7.476l-.141-.21V7.16l1.123-.084v4.313l.14.211v.105Zm1.726.085c-.772 0-1.235-.702-1.235-1.901 0-1.192.483-1.83 1.227-1.83.379 0 .589.147.68.441V7.476l-.141-.21V7.16l1.123-.084v4.313l.14.211v.104h-.996l-.077-.533c-.111.457-.321.619-.721.619Zm2.461 4.958.14.211v.106H11.67v-.106l.14-.211v-2.525c0-.301-.091-.483-.309-.483-.26 0-.449.218-.449.645v2.363l.141.211v.106H9.93v-.106l.14-.211v-3.914l-.14-.21v-.105l1.122-.084v1.451c.127-.301.414-.469.82-.469.576 0 .919.365.919 1.073v2.258h.001Zm-2.664-6.846c0 1.263.112 1.648.421 1.648.385 0 .455-.554.455-1.662 0-1.073-.077-1.606-.449-1.606-.315 0-.427.379-.427 1.62Zm7.041 1.487.14.211v.104h-1.262V11.6l.14-.211V8.787c0-.252-.084-.407-.281-.407-.244 0-.441.219-.441.638v2.371l.14.211v.104h-1.262V11.6l.14-.211V8.787c0-.252-.084-.407-.28-.407-.245 0-.442.219-.442.638v2.371l.141.211v.104h-1.263V11.6l.14-.211V8.535l-.14-.169v-.104l1.01-.12h.084l.028.393c.119-.309.414-.477.814-.477.427 0 .708.21.834.589.105-.365.435-.589.856-.589.553 0 .904.365.904 1.072v2.259Zm-1.311 4.644c0 .609-.393 1.114-1.339 1.114-.245 0-.575-.028-1.087-.119v-1.304h.287l.091.281c.224.715.441.982.785.982.323 0 .533-.232.533-.59 0-.294-.147-.497-.497-.687l-.603-.323c-.385-.21-.596-.539-.596-.946 0-.638.499-1.024 1.325-1.024.239 0 .547.034.884.105v1.024h-.287l-.148-.373c-.168-.449-.329-.595-.595-.595-.287 0-.456.168-.456.449 0 .238.141.399.484.595l.595.337c.406.232.624.561.624 1.074Zm4.538-4.644.14.211v.104h-1.073l-.048-.407c-.112.309-.407.491-.786.491-.561 0-.911-.35-.911-.926 0-.561.315-.932 1.283-1.311l.413-.16v-.526c0-.463-.084-.652-.343-.652-.211 0-.329.113-.533.624l-.231.575h-.317V8.27c.415-.127.828-.211 1.185-.211.792 0 1.221.379 1.221 1.066v2.264Zm-.982-.589V9.587l-.133.056c-.413.168-.567.547-.567 1.101 0 .414.098.653.329.653.23 0 .371-.225.371-.597Zm4.586.8v.104h-1.263V11.6l.141-.211V8.864c0-.302-.091-.484-.309-.484-.26 0-.449.219-.449.646v2.363l.14.211v.104h-1.262V11.6l.14-.211V8.535l-.14-.169v-.104l1.01-.12h.084l.028.393c.119-.309.407-.477.82-.477.575 0 .918.365.918 1.072v2.259L24 11.6Z" />
+                                </svg>
+                            </span>
+
+                            <div style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                  ">
+                                <div class="">
+                                    <h3>Goldman Sachs Operations Job Simulation</h3>
+                                    <p>Forage | January 2026</p>
+                                </div>
+
+                                <div style="margin-right: 0.75rem">
+                                    <a class="mini-link"
+                                        href="https://drive.google.com/file/d/1J7QcxUn7Q6fnrKmJ-KkgbFZl7zVpnsXP/view">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-item with-logo">
+                            <span class="logo apna-logo">
+                                <img src="images/apna-college.png" alt="Apna College logo" />
+                            </span>
+
+                            <div style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                  ">
+                                <div class="">
+                                    <h3>Data Structures & Algorithms</h3>
+                                    <p>Apna College | September 2025</p>
+                                </div>
+
+                                <div style="margin-left: 5.55rem">
+                                    <a class="mini-link"
+                                        href="https://drive.google.com/file/d/1AQihwQpqJC1rRhLRoSIKlckBMvteenHs/view">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="coding" class="reveal">
+                <!-- <div class="section-head">
+                    <div>
+                        <div class="eyebrow">08 / OPEN SOURCE + PROBLEM SOLVING</div>
+                        <h2>CODING PROFILE<span style="color: var(--yellow)">.</span></h2>
+                    </div>
+
+                    <span class="section-index">ACTIVITY_008</span>
+                </div> -->
+
+                <!-- <div class="code-grid">
+                    <div class="code-card">
+                        <h3>GITHUB / CONTRIBUTION GRID</h3>
+                        <p>
+                            Connect your GitHub username to display live repositories,
+                            followers and contribution activity here. No activity counts are
+                            fabricated in this preview.
+                        </p>
+                        <div class="heatmap" aria-label="Decorative contribution grid preview"></div>
+                        <p class="mono">PROFILE: LINK PENDING</p>
+                    </div>
+                    <div class="code-card">
+                        <h3>LEETCODE / PROBLEM SOLVING</h3>
+                        <p>
+                            Your LeetCode profile can be linked here with solved count,
+                            contest rating and submission heatmap.
+                        </p>
+                        <p class="mono" style="font-size: 13px; color: var(--yellow)">
+                            STATUS: PROFILE LINK REQUIRED
+                        </p>
+                        <p>
+                            Use the terminal below to explore the information currently
+                            available on this portfolio.
+                        </p>
+                    </d iv>
+                </div> -->
+
+                <section class="coding-section" id="coding-profile">
+                    <div class="section-topline">
+                        08 / OPEN SOURCE + PROBLEM SOLVING
+                    </div>
+
+                    <div class="section-heading">
+                        <h1>CODING PROFILE<span>.</span></h1>
+                        <div class="activity-tag">ACTIVITY_008</div>
+                    </div>
+
+                    <div class="profile-grid">
+                        <!-- GITHUB CARD -->
+                        <article class="profile-card">
+                            <div class="card-heading">
+                                <div>
+                                    <p class="eyebrow">OPEN SOURCE / 01</p>
+                                    <h2>GITHUB / CONTRIBUTION GRID</h2>
+                                </div>
+                                <span class="live-indicator"><i></i> LIVE</span>
+                            </div>
+
+                            <a class="profile-identity" href="https://github.com/vedant-0509" target="_blank">
+                                <div class="avatar" id="github-avatar">V</div>
+
+                                <div>
+                                    <strong id="github-name">Vedant Mandhare</strong>
+                                    <span>@vedant-0509</span>
+                                </div>
+                            </a>
+
+                            <div class="stats-row">
+                                <div class="stat">
+                                    <strong id="github-repos">—</strong>
+                                    <span>PUBLIC REPOS</span>
+                                </div>
+
+                                <div class="stat">
+                                    <strong id="github-followers">—</strong>
+                                    <span>FOLLOWERS</span>
+                                </div>
+
+                                <div class="stat">
+                                    <strong id="github-following">—</strong>
+                                    <span>FOLLOWING</span>
+                                </div>
+                            </div>
+
+                            <div class="chart-title">
+                                <h3>CONTRIBUTION ACTIVITY</h3>
+                                <span id="github-total">Loading...</span>
+                            </div>
+
+                            <div class="github-heatmap" id="github-heatmap"></div>
+
+                            <div class="legend">
+                                LESS
+                                <i class="level-0"></i>
+                                <i class="level-1"></i>
+                                <i class="level-2"></i>
+                                <i class="level-3"></i>
+                                <i class="level-4"></i>
+                                MORE
+                            </div>
+
+                            <div class="chart-title">
+                                <h3>TOP LANGUAGES</h3>
+                                <span>Public repositories</span>
+                            </div>
+
+                            <div class="language-chart">
+                                <div class="donut" id="language-donut">
+                                    <span id="language-total">—</span>
+                                </div>
+
+                                <div class="language-legend" id="language-legend">
+                                    Loading languages...
+                                </div>
+                            </div>
+
+                            <p class="data-note" id="github-status">
+                                Connecting to GitHub...
+                            </p>
+
+                            <a class="text-link" href="https://github.com/vedant-0509" target="_blank">
+                                OPEN GITHUB PROFILE ↗
+                            </a>
+                        </article>
+
+                        <!-- LEETCODE CARD -->
+                        <article class="profile-card">
+                            <div class="card-heading">
+                                <div>
+                                    <p class="eyebrow">PROBLEM SOLVING / 02</p>
+                                    <h2>LEETCODE / PROBLEM SOLVING</h2>
+                                </div>
+                                <span class="live-indicator"><i></i> LIVE</span>
+                            </div>
+
+                            <a class="profile-identity" href="https://leetcode.com/u/Vedant_0509/" target="_blank">
+                                <div class="leetcode-mark">LC</div>
+
+                                <div>
+                                    <strong>Vedant_0509</strong>
+                                    <span>LeetCode profile</span>
+                                </div>
+                            </a>
+
+                            <div class="leetcode-total">
+                                <div>
+                                    <strong id="lc-total">—</strong>
+                                    <span>PROBLEMS SOLVED</span>
+                                </div>
+
+                                <div class="rank-box">
+                                    <span>GLOBAL RANK</span>
+                                    <strong id="lc-rank">—</strong>
+                                </div>
+                            </div>
+
+                            <div class="difficulty-chart">
+                                <div class="difficulty-row">
+                                    <div class="difficulty-label">
+                                        <span>EASY</span>
+                                        <b id="lc-easy">—</b>
+                                    </div>
+                                    <div class="bar-track">
+                                        <div class="bar-fill easy-fill" id="lc-easy-bar"></div>
+                                    </div>
+                                </div>
+
+                                <div class="difficulty-row">
+                                    <div class="difficulty-label">
+                                        <span>MEDIUM</span>
+                                        <b id="lc-medium">—</b>
+                                    </div>
+                                    <div class="bar-track">
+                                        <div class="bar-fill medium-fill" id="lc-medium-bar"></div>
+                                    </div>
+                                </div>
+
+                                <div class="difficulty-row">
+                                    <div class="difficulty-label">
+                                        <span>HARD</span>
+                                        <b id="lc-hard">—</b>
+                                    </div>
+                                    <div class="bar-track">
+                                        <div class="bar-fill hard-fill" id="lc-hard-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chart-title">
+                                <h3>SUBMISSION ACTIVITY</h3>
+                                <span id="lc-activity-total">Loading...</span>
+                            </div>
+
+                            <div class="leetcode-heatmap" id="leetcode-heatmap"></div>
+
+                            <div class="legend">
+                                LESS
+                                <i class="level-0"></i>
+                                <i class="level-1"></i>
+                                <i class="level-2"></i>
+                                <i class="level-3"></i>
+                                <i class="level-4"></i>
+                                MORE
+                            </div>
+
+                            <div class="contest-panel">
+                                <div>
+                                    <span>CONTEST RATING</span>
+                                    <strong id="lc-rating">—</strong>
+                                </div>
+
+                                <div class="rating-track">
+                                    <div id="lc-rating-bar"></div>
+                                </div>
+
+                                <p class="data-note" id="lc-status">
+                                    Connecting to LeetCode...
+                                </p>
+                            </div>
+
+                            <a class="text-link" href="https://leetcode.com/u/Vedant_0509/" target="_blank">
+                                OPEN LEETCODE PROFILE ↗
+                            </a>
+                        </article>
+                    </div>
+                </section>
+            </section>
+
+            <section id="contact" class="reveal">
+                <div class="contact-panel">
+                    <div>
+                        <div class="eyebrow" style="color: #333">
+                            09 / HAVE A ROLE OR PROJECT IN MIND?
+                        </div>
+                        <h2>LET'S BUILD<br />SOMETHING.</h2>
+                        <p>
+                            I'm open to software development, backend engineering and
+                            full-stack internship opportunities. Reach out by email to
+                            connect.
+                        </p>
+                        <div class="contact-email">vedantmandhare0509@gmail.com</div>
+                    </div>
+                    <div class="contact-actions">
+                        <a class="btn dark" href="mailto:vedantmandhare0509@gmail.com" style="color: black;">✉ SEND AN
+                            EMAIL</a>
+                        <a class="btn" href="tel:+917977280040">☎ +91 7977280040</a>
+                        <button class="btn" id="copyEmail">▣ COPY EMAIL</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="wrap footer-row">
+            <span>© 2026 VEDANT.exe</span>
+            <a href="#top">BACK TO TOP ↑</a>
+        </div>
+    </footer>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-box">
+            <div class="modal-head">
+                <h3 id="modalTitle">CASE STUDY</h3>
+                <button class="close" id="closeModal">CLOSE</button>
+            </div>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+    <script>
+        const $ = (s) => document.querySelector(s),
+            $$ = (s) => document.querySelectorAll(s);
+
+        /* CODING PROFILE: GitHub + LeetCode */
+        const GITHUB_USER = "vedant-0509";
+        const LEETCODE_USER = "Vedant_0509";
+
+        const getById = (id) => document.getElementById(id);
+
+        const formatNumber = (value) =>
+            Number(value || 0).toLocaleString("en-IN");
+
+        async function fetchData(url) {
+            const response = await fetch(url);
+
+            if (!response.ok) {
+                throw new Error("API request failed: " + response.status);
+            }
+
+            return response.json();
+        }
+
+        /* =================================
+               GITHUB PROFILE
+            ================================= */
+
+        async function loadGitHub() {
+            try {
+                const [user, repos, contributionData] = await Promise.all([
+                    fetchData(`https://api.github.com/users/${GITHUB_USER}`),
+
+                    fetchData(
+                        `https://api.github.com/users/${GITHUB_USER}/repos?per_page=100`,
+                    ),
+
+                    fetchData(
+                        `https://github-contributions-api.jogruber.de/v4/${GITHUB_USER}?y=last`,
+                    ),
+                ]);
+
+                getById("github-name").textContent = user.name || user.login;
+                getById("github-repos").textContent = formatNumber(user.public_repos);
+                getById("github-followers").textContent = formatNumber(
+                    user.followers,
+                );
+                getById("github-following").textContent = formatNumber(
+                    user.following,
+                );
+
+                if (user.avatar_url) {
+                    const image = document.createElement("img");
+
+                    image.src = user.avatar_url;
+                    image.alt = "GitHub profile picture";
+
+                    getById("github-avatar").replaceChildren(image);
+                }
+
+                renderGitHubHeatmap(contributionData.contributions || []);
+
+                const total = (contributionData.contributions || []).reduce(
+                    (sum, day) => sum + day.count,
+                    0,
+                );
+
+                getById("github-total").textContent =
+                    formatNumber(total) + " contributions in last year";
+
+                // Language statistics
+
+                const languages = {};
+
+                repos.forEach((repo) => {
+                    if (repo.language) {
+                        languages[repo.language] = (languages[repo.language] || 0) + 1;
+                    }
+                });
+
+                renderLanguages(languages);
+
+                getById("github-status").textContent =
+                    "GitHub profile data loaded successfully.";
+            } catch (error) {
+                console.error("GitHub error:", error);
+
+                getById("github-status").textContent =
+                    "GitHub statistics unavailable. Open your profile using the link.";
+            }
+        }
+
+        /* GITHUB CONTRIBUTION HEATMAP */
+
+        function renderGitHubHeatmap(days) {
+            const grid = getById("github-heatmap");
+
+            grid.innerHTML = "";
+
+            if (!days.length) {
+                grid.textContent = "Contribution data unavailable.";
+                return;
+            }
+
+            const max = Math.max(...days.map((day) => day.count), 1);
+
+            const firstDate = new Date(days[0].date + "T00:00:00");
+
+            const offset = (firstDate.getDay() + 6) % 7;
+
+            for (let i = 0; i < offset; i++) {
+                const blank = document.createElement("span");
+
+                blank.className = "heat-cell empty";
+
+                grid.appendChild(blank);
+            }
+
+            days.forEach((day) => {
+                const cell = document.createElement("span");
+
+                const ratio = day.count / max;
+
+                let level = 0;
+
+                if (day.count > 0) {
+                    if (ratio < 0.25) level = 1;
+                    else if (ratio < 0.5) level = 2;
+                    else if (ratio < 0.75) level = 3;
+                    else level = 4;
+                }
+
+                cell.className = `heat-cell level-${level}`;
+
+                cell.title = `${day.date}: ${day.count} contributions`;
+
+                grid.appendChild(cell);
+            });
+        }
+
+        /* GITHUB LANGUAGE DONUT CHART */
+
+        function renderLanguages(data) {
+            const entries = Object.entries(data)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 5);
+
+            const total = entries.reduce((sum, item) => sum + item[1], 0);
+
+            if (!total) {
+                getById("language-legend").textContent =
+                    "No language data available.";
+                return;
+            }
+
+            const colors = ["#c4f36b", "#79a7ff", "#ff8b8b", "#f5c65e", "#c39aff"];
+
+            let cursor = 0;
+
+            const segments = entries.map(([name, count], index) => {
+                const start = cursor;
+
+                cursor += (count / total) * 100;
+
+                return `${colors[index]} ${start}% ${cursor}%`;
+            });
+
+            getById("language-donut").style.background =
+                `conic-gradient(${segments.join(",")})`;
+
+            getById("language-total").textContent = entries.length;
+
+            getById("language-legend").innerHTML = entries
+                .map(
+                    ([name, count], index) => `
+
+            <div class="language-item">
+
+                <i style="background:${colors[index]}"></i>
+
+                <span>${name}</span>
+
+                <b>${count}</b>
+
+            </div>
+
+        `,
+                )
+                .join("");
+        }
+
+        /* =================================
+               LEETCODE PROFILE
+            ================================= */
+
+        async function loadLeetCode() {
+            const username = encodeURIComponent(LEETCODE_USER);
+            const base = `https://leetcode-stats.tashif.codes/${username}`;
+
+            try {
+                getById("lc-status").textContent = "Loading LeetCode statistics...";
+
+                const [statsResponse, contestResponse, heatmapResponse] =
+                    await Promise.all([
+                        fetchData(`${base}/stats`),
+                        fetchData(`${base}/contests`).catch(() => null),
+                        fetchData(`${base}/heatmap`).catch(() => null),
+                    ]);
+
+                if (statsResponse.status !== "success" || !statsResponse.data) {
+                    throw new Error(
+                        statsResponse.message || "LeetCode profile could not be found.",
+                    );
+                }
+
+                const stats = statsResponse.data;
+                const difficulty = stats.byDifficulty || {};
+                const easy = Number(difficulty.easy || 0);
+                const medium = Number(difficulty.medium || 0);
+                const hard = Number(difficulty.hard || 0);
+                const total = Number(stats.totalSolved ?? easy + medium + hard);
+
+                getById("lc-total").textContent = formatNumber(total);
+                getById("lc-easy").textContent = formatNumber(easy);
+                getById("lc-medium").textContent = formatNumber(medium);
+                getById("lc-hard").textContent = formatNumber(hard);
+
+                const max = Math.max(Number(stats.totalQuestions || 0), total, 1);
+                getById("lc-easy-bar").style.width = (easy / max) * 100 + "%";
+                getById("lc-medium-bar").style.width = (medium / max) * 100 + "%";
+                getById("lc-hard-bar").style.width = (hard / max) * 100 + "%";
+
+                const contest = contestResponse?.data || {};
+                const rank = contest.globalRanking;
+                getById("lc-rank").textContent = rank ? formatNumber(rank) : "N/A";
+
+                const rating = Number(contest.rating || 0);
+                getById("lc-rating").textContent = rating
+                    ? Math.round(rating)
+                    : "N/A";
+                getById("lc-rating-bar").style.width =
+                    Math.min((rating / 3000) * 100, 100) + "%";
+
+                const heatmap = heatmapResponse?.data || {};
+                renderLeetCodeHeatmap(heatmap.dailyContributions || []);
+                getById("lc-activity-total").textContent =
+                    formatNumber(heatmap.totalSubmissions || 0) + " submissions";
+
+                getById("lc-status").textContent =
+                    "LeetCode statistics loaded successfully.";
+            } catch (error) {
+                console.error("LeetCode error:", error);
+                getById("lc-status").textContent =
+                    "Unable to load LeetCode stats right now. Open your profile to view your latest data.";
+            }
+        }
+
+        /* LEETCODE SUBMISSION HEATMAP */
+
+        function renderLeetCodeHeatmap(contributions = []) {
+            const grid = document.getElementById("leetcode-heatmap");
+
+            if (!grid) return;
+
+            grid.innerHTML = "";
+
+            const counts = new Map(
+                contributions.map((item) => [item.date, Number(item.count) || 0]),
+            );
+
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            // Start 364 days ago and align to Sunday.
+            const startDate = new Date(today);
+            startDate.setDate(startDate.getDate() - 364);
+            startDate.setDate(startDate.getDate() - startDate.getDay());
+
+            const maxCount = Math.max(1, ...counts.values());
+
+            // 53 columns × 7 rows = 371 cells.
+            for (let i = 0; i < 371; i++) {
+                const date = new Date(startDate);
+                date.setDate(startDate.getDate() + i);
+
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, "0");
+                const day = String(date.getDate()).padStart(2, "0");
+
+                const dateKey = `${year}-${month}-${day}`;
+
+                const count = date > today ? 0 : counts.get(dateKey) || 0;
+
+                let level = 0;
+
+                if (count > 0) {
+                    const ratio = count / maxCount;
+
+                    if (ratio <= 0.25) level = 1;
+                    else if (ratio <= 0.5) level = 2;
+                    else if (ratio <= 0.75) level = 3;
+                    else level = 4;
+                }
+
+                const cell = document.createElement("span");
+
+                cell.className = `heat-cell level-${level}`;
+                cell.title = `${count} submissions on ${dateKey}`;
+
+                grid.appendChild(cell);
+            }
+        }
+
+        /* LOAD BOTH PROFILES */
+
+        loadGitHub();
+        loadLeetCode();
+
+        const root = document.documentElement;
+        $("#themeBtn").addEventListener("click", () => {
+            root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+        });
+        $("#menuBtn").addEventListener("click", () =>
+            $("#navlinks").classList.toggle("open"),
+        );
+        $$("#navlinks a").forEach((a) =>
+            a.addEventListener("click", () =>
+                $("#navlinks").classList.remove("open"),
+            ),
+        );
+        window.addEventListener("scroll", () => {
+            let h = document.documentElement;
+            $("#progress").style.width =
+                (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100 + "%";
+        });
+        const revealObserver = new IntersectionObserver(
+            (entries) =>
+                entries.forEach((e) => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add("visible");
+                        revealObserver.unobserve(e.target);
+                    }
+                }),
+            { threshold: 0.12 },
+        );
+        $$(".reveal").forEach((el) => revealObserver.observe(el));
+        $$(".filter").forEach((btn) =>
+            btn.addEventListener("click", () => {
+                $$(".filter").forEach((b) => b.classList.remove("active"));
+                btn.classList.add("active");
+                const f = btn.dataset.filter;
+                $$(".project").forEach(
+                    (p) =>
+                    (p.style.display =
+                        f === "all" || p.dataset.category.split(" ").includes(f)
+                            ? "flex"
+                            : "none"),
+                );
+            }),
+        );
+        const commands = {
+            help: "Available commands: help, about, skills, experience, projects, education, contact, clear, matrix, theme",
+            whoami:
+                "Vedant Mandhare\\nInformation Technology undergraduate · KJSIT\\nFull-stack / backend developer · Mumbai, India",
+            about:
+                "I build scalable backends, real-time applications and full-stack products. Current focus: backend engineering, DSA and system design.",
+            skills:
+                "Languages: Java, JavaScript, SQL\\nBackend: Node.js, Express.js, REST APIs, Socket.IO\\nFrontend: React.js, Bootstrap, Tailwind CSS\\nData: MongoDB, MySQL, SQLite, Redis\\nTools: Git, Docker, Postman",
+            experience:
+                "Data Analyst Intern — Bluestock Fintech\\n64,320 NAV records + 32,778 investor transactions processed\\n40 mutual fund schemes analysed; four-tab dashboard built.",
+            projects:
+                "1. Real-time Stock & Mutual Fund Analytics Platform\\n2. Wanderlust — Travel Listing Web App\\n3. Mutual Fund Analytics Pipeline",
+            education:
+                "B.Tech IT — KJSIT (CGPA 9.05, Sem 4)\\nXII PCMB — 85.86%\\nMHT-CET PCM — 97.47 percentile",
+            contact:
+                "Email: vedantmandhare0509@gmail.com\\nPhone: +91 7977280040\\nLocation: Mumbai, Maharashtra",
+            clear: "Terminal cleared.",
+        };
+        function runCommand(raw) {
+            let c = raw.trim().toLowerCase();
+            if (!c) return;
+            let out = $("#termOutput");
+            if (c === "matrix") {
+                document.body.classList.toggle("matrix-on");
+                out.textContent +=
+                    "\\n$ matrix\\nMatrix visual " +
+                    (document.body.classList.contains("matrix-on")
+                        ? "enabled"
+                        : "disabled");
+                return;
+            }
+            if (c === "theme") {
+                root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+                out.textContent += "\\n$ theme\\nTheme switched.";
+                return;
+            }
+            if (c === "clear") {
+                out.textContent = "";
+                return;
+            }
+            out.textContent +=
+                "\\n\\n$ " +
+                c +
+                "\\n" +
+                (commands[c] || "Command not found. Type help.");
+            out.scrollTop = out.scrollHeight;
+        }
+        $$("[data-command]").forEach((b) =>
+            b.addEventListener("click", () => runCommand(b.dataset.command)),
+        );
+        $("#terminalForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            runCommand($("#terminalInput").value);
+            $("#terminalInput").value = "";
+        });
+        const modalData = {
+            stock: [
+                "Real-time Stock & Mutual Fund Analytics Platform",
+                `
+        <p><b>Goal:</b> Build a unified platform for market information and mutual fund workflows.</p>
+
+        <p><b>Engineering:</b> Eight Express services are exposed through a central API gateway. Upstox market data powers real-time price updates; Redis is used for caching. Authentication uses JWT with role-based authorization, validation and rate limiting.</p>
+
+        <p><b>Reliability:</b> Simulated order execution is idempotent and uses MongoDB transactions. A weekday 23:15 IST NAV sync includes recovery for missed runs. The project resume reports 49 passing automated tests.</p>
+
+        <p><b>Stack:</b> React, Node.js, Express, MongoDB, Redis, Upstox APIs.</p>
+
+        <h3 class="gallery-heading">PROJECT SCREENSHOTS</h3>
+
+        <div class="project-screenshot-gallery">
+            <figure>
+                <img src="images/zerodha-landing.png" alt="Zerodha landing page">
+                <figcaption>Landing Page</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/zerodha-dashboard.png" alt="Zerodha dashboard">
+                <figcaption>Dashboard</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/zerodha-stock-chart.png" alt="Zerodha stock chart">
+                <figcaption>Stock Chart</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/zerodha-login.png" alt="Zerodha login page">
+                <figcaption>Login Page</figcaption>
+            </figure>
+        </div>
+        `,
+            ],
+
+            wanderlust: [
+                "Wanderlust — Travel Listing Web App",
+                `
+        <p><b>Goal:</b> Create a travel listing platform with user-generated content and location discovery.</p>
+
+        <p><b>Features:</b> Listing CRUD, Cloudinary image uploads, reviews, Joi validation, local login and Google OAuth 2.0. Listing owners control edit/delete operations. MapTiler geocoding stores GeoJSON coordinates and powers interactive maps, search and category filters.</p>
+
+        <p><b>Stack:</b> Node.js, Express, MongoDB, EJS, Bootstrap, Cloudinary, MapTiler.</p>
+
+        <h3 class="gallery-heading">PROJECT SCREENSHOTS</h3>
+
+        <div class="project-screenshot-gallery">
+            <figure>
+                <img src="images/wanderlust-signup.png" alt="Wanderlust signup page">
+                <figcaption>Signup Page</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/wanderlust-add-listing.png" alt="Wanderlust add listing page">
+                <figcaption>Add New Listing</figcaption>
+            </figure>
+        </div>
+        `,
+            ],
+
+            funds: [
+                "Mutual Fund Analytics Pipeline",
+                "<p><b>Data:</b> 64,320 NAV records and 32,778 investor transactions across 40 schemes, 10 fund houses and 5,000 investors.</p><p><b>Pipeline:</b> Python/pandas cleaning and validation, scheme-code checks, duplicate checks and SQLite fact/dimension schema.</p><p><b>Analysis:</b> CAGR, Sharpe, Sortino, maximum drawdown, Nifty 50/100 alpha and beta, 95% VaR/CVaR. Results presented in a four-tab dashboard with category and fund-house filters.</p>",
+            ],
+
+            engineering: [
+                "Backend Systems & API Engineering",
+                `<p>Designed and developed a modular backend architecture for an online stock brokerage platform using Node.js and Express.js. Implemented centralized API routing to connect independently managed services.</p>
+
+    <p><strong>Key Engineering Highlights:</strong></p>
+    <ul>
+        <li><strong>Microservices Architecture:</strong> Separated functionality into services for stocks, holdings, orders, watchlists and authentication.</li>
+        <li><strong>Centralized API Gateway:</strong> Routed frontend requests through a central backend server.</li>
+        <li><strong>JWT Authentication:</strong> Implemented token-based user authentication.</li>
+        <li><strong>Role-Based Access Control:</strong> Implemented USER and ADMIN roles with protected routes.</li>
+        <li><strong>API Security:</strong> Added input validation and rate limiting.</li>
+        <li><strong>Database:</strong> Integrated MongoDB for application data and indexing.</li>
+        <li><strong>Docker:</strong> Containerized services for deployment.</li>
+        <li><strong>Testing:</strong> Created automated scripts to test authentication, authorization and API health.</li>
+    </ul>
+
+    <p><strong>Technology Stack:</strong> Node.js, Express.js, MongoDB, JWT, REST APIs, Docker and JavaScript.</p>
+
+    <p><strong>Outcome:</strong> Developed a modular backend with centralized request handling, authentication, authorization and independent service management.</p>`,
+            ],
+        };
+        $$("[data-modal]").forEach((b) =>
+            b.addEventListener("click", () => {
+                let d = modalData[b.dataset.modal];
+                $("#modalTitle").textContent = d[0];
+                $("#modalContent").innerHTML = d[1];
+                $("#modal").classList.add("open");
+            }),
+        );
+        function closeModal() {
+            $("#modal").classList.remove("open");
+        }
+        $("#closeModal").addEventListener("click", closeModal);
+        $("#modal").addEventListener("click", (e) => {
+            if (e.target.id === "modal") closeModal();
+        });
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") closeModal();
+        });
+        $("#copyEmail").addEventListener("click", async () => {
+            try {
+                await navigator.clipboard.writeText("vedantmandhare0509@gmail.com");
+                $("#copyEmail").textContent = "COPIED ✓";
+            } catch (e) {
+                location.href = "mailto:vedantmandhare0509@gmail.com";
+            }
+        });
+        const cursor = $("#cursor");
+        window.addEventListener("mousemove", (e) => {
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+        });
+        $$("a,button").forEach((el) => {
+            el.addEventListener("mouseenter", () => {
+                cursor.style.width = "22px";
+                cursor.style.height = "22px";
+            });
+            el.addEventListener("mouseleave", () => {
+                cursor.style.width = "10px";
+                cursor.style.height = "10px";
+            });
+        });
+        /* Lightweight optional Matrix canvas effect, enabled from terminal command. */
+        const canvas = $("#matrix"),
+            ctx = canvas.getContext("2d");
+        let drops = [];
+        function sizeMatrix() {
+            canvas.width = innerWidth;
+            canvas.height = innerHeight;
+            drops = Array(Math.ceil(canvas.width / 18)).fill(1);
+        }
+        sizeMatrix();
+        addEventListener("resize", sizeMatrix);
+        setInterval(() => {
+            if (!document.body.classList.contains("matrix-on")) return;
+            ctx.fillStyle = "rgba(0,0,0,.08)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#19b85b";
+            ctx.font = "14px monospace";
+            drops.forEach((y, i) => {
+                ctx.fillText(
+                    String.fromCharCode(0x30a0 + Math.random() * 96),
+                    i * 18,
+                    y * 18,
+                );
+                if (y * 18 > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            });
+        }, 65);
+
+        /* ======================= EDIT ME: your links and images =======================
+                 1) Put screenshots in an "images" folder next to this file and set the file names below.
+                 2) Paste your live and GitHub URLs. Leave "" to show a greyed-out button.
+                 3) Paste certificate URLs (credential links) under CERTS. */
+        const PROJECTS = {
+            stock: {
+                image: "images/stock.png",
+                live: "https://zerodha-a-online-trading-platforms.onrender.com/home",
+                github:
+                    "https://github.com/vedant-0509/Zerodha-A-Online-brokerage-platform",
+                docker:
+                    "https://hub.docker.com/repository/docker/vedant0509/zerodha-myversion/general",
+            },
+            wanderlust: {
+                image: "images/wanderlust.png",
+                live: "https://wanderlust-a-travelling-guide.onrender.com/alllist",
+                github: "https://github.com/vedant-0509/WanderLust",
+            },
+            funds: {
+                image: "images/mf-dashboard.png",
+                live: "",
+                github:
+                    "https://github.com/vedant-0509/Bluestock-Mutual-Fund-Analytics",
+            },
+            engineering: { image: "images/backend.png", live: "", github: "" },
+        };
+        const CERTS = { github: "", ibm: "", goldman: "", dsa: "" };
+        /* ============================================================================ */
+        (function () {
+            document.querySelectorAll("[data-img]").forEach((b) => {
+                const p = PROJECTS[b.dataset.img];
+                if (p && p.image) {
+                    const i = new Image();
+                    i.className = "shot";
+                    i.alt = "Screenshot of " + b.dataset.img;
+                    i.onload = () => b.appendChild(i);
+                    i.src = p.image;
+                }
+            });
+            document.querySelectorAll("[data-link]").forEach((a) => {
+                const u = (PROJECTS[a.dataset.proj] || {})[a.dataset.link];
+                if (u) {
+                    a.href = u;
+                    a.target = "_blank";
+                    a.rel = "noopener";
+                } else {
+                    a.classList.add("off");
+                    a.setAttribute("aria-disabled", "true");
+                    a.textContent += " (ADD URL)";
+                }
+            });
+            document.querySelectorAll("[data-cert]").forEach((a) => {
+                const u = CERTS[a.dataset.cert];
+                if (u) {
+                    a.href = u;
+                    a.target = "_blank";
+                    a.rel = "noopener";
+                } else a.remove();
+            });
+            const R = document.documentElement,
+                rm = matchMedia("(prefers-reduced-motion:reduce)").matches;
+            try {
+                const v = localStorage.getItem("season");
+                if (v) R.dataset.season = v;
+            } catch (e) { }
+            document.querySelectorAll(".sw").forEach(
+                (b) =>
+                (b.onclick = () => {
+                    R.dataset.season = b.dataset.s;
+                    try {
+                        localStorage.setItem("season", b.dataset.s);
+                    } catch (e) { }
+                }),
+            );
+            if (matchMedia("(hover:hover) and (pointer:fine)").matches && !rm) {
+                const r = document.getElementById("ring");
+                addEventListener("mousemove", (e) => {
+                    r.style.opacity = 1;
+                    r.style.transform = `translate(${e.clientX - 17}px,${e.clientY - 17}px)`;
+                    r.classList.toggle(
+                        "big",
+                        !!e.target.closest("a,button,input,.tile"),
+                    );
+                });
+            }
+            const c = document.getElementById("stars"),
+                x = c.getContext("2d");
+            let w,
+                h,
+                S = [];
+            const size = () => {
+                w = c.width = innerWidth;
+                h = c.height = innerHeight;
+                S = Array.from(
+                    { length: Math.min(80, ((w * h) / 16000) | 0) },
+                    () => ({
+                        x: Math.random() * w,
+                        y: Math.random() * h,
+                        r: Math.random() * 2 + 0.6,
+                        v: Math.random() * 0.25 + 0.05,
+                    }),
+                );
+            };
+            const draw = () => {
+                x.clearRect(0, 0, w, h);
+                x.fillStyle = getComputedStyle(R).getPropertyValue("--ink");
+                x.globalAlpha = 0.2;
+                S.forEach((s) => {
+                    x.fillRect(s.x, s.y, s.r, s.r);
+                    if (!rm) {
+                        s.y += s.v;
+                        if (s.y > h) s.y = 0;
+                    }
+                });
+                if (!rm) requestAnimationFrame(draw);
+            };
+            size();
+            draw();
+            addEventListener("resize", () => {
+                size();
+                if (rm) draw();
+            });
+        })();
+    </script>
+</body>
+
+</html>
